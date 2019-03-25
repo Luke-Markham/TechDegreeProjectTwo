@@ -21,7 +21,7 @@ a:hover {
 }
 
 a:active {
-  color: rgb(102, 102, 255);
+  color: rgb(154, 154, 255);
 }
 
 li a:visited {
@@ -33,7 +33,7 @@ li a:hover {
 }
 
 li a:active {
-  color: rgb(102, 102, 255);
+  color: rgb(154, 154, 255);
 }
 
 body {
@@ -85,6 +85,9 @@ ul li {
   margin-top: 5px;
   font-weight: bold;
 }
+ul li a {
+  padding: 1em 7em 1em 7em;
+}
 
 .profile-pic {
   width: 65%;
@@ -134,28 +137,132 @@ h2 {
   padding-top: 0.75em;
 }
 
+#contact {
+  margin-bottom: 2em;
+}
+
 .footer-content p {
-  padding-bottom: 1.5em;
+  padding-bottom: 0.75em;
   line-height: 1.5em;
+  color: rgb(155, 155, 155);
 }
 .phone-email {
   font-family: "Karla", sans-serif;
+  color: rgb(155, 155, 155);
 }
 
-/* --- Comment start ---
- prevents email address from breaking out of parent container 
-while going below 320px 
---- */
-
-.dont-break-out {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
+hr {
+  margin-top: 3em;
 }
-/* --- Comment End --- */
+
+.email-to :hover {
+  color: orange;
+}
+
 .bottom-links {
   display: flex;
   justify-content: space-between;
   padding-top: 1em;
   padding-bottom: 1.75em;
+}
+.bottom-links-2 {
+  display: none;
+}
+
+/* MEDIA QUERIES ------------  */
+
+/* 768px -------------- */
+
+@media only screen and (min-width: 768px) {
+  /* Header Styles ------------  */
+
+  h1 {
+    padding-top: 1.5em;
+  }
+  .page-nav li {
+    background-color: #f8f8f8;
+    display: inline-block;
+  }
+
+  #about-me {
+    margin-bottom: 0;
+  }
+
+  .page-nav a {
+    padding: 0 1em 0 1em;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 40%;
+    padding: 0.5em 2.5em 4.25em 1em;
+  }
+
+  /* CLEARFIX CODE --- */
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .intro-card p {
+    text-align: left;
+    line-height: 1.4em;
+  }
+
+  /* Main Content Styles ------------  */
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-1 {
+    width: 49%;
+  }
+  .col-2 {
+    width: 49%;
+  }
+
+  .map {
+    margin-top: 0;
+  }
+
+  .main-content p {
+    margin: 0px auto;
+    width: 80%;
+  }
+
+  /* Footer Content Styles ------------  */
+  .footer-content {
+    padding-bottom: 3.5em;
+  }
+
+  .contact-blurb {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .bottom-links {
+    display: none;
+  }
+
+  .bottom-links-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+  }
+
+  .bottom-links-2 ul {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+  .bottom-links-2 li {
+    padding: 0;
+  }
+}
+/* 1024px -------------- */
+
+@media only screen and (min-width: 1024px) {
 }
