@@ -21,14 +21,16 @@
   <body>
     <section class="header-content">
       <header>
-        <h1 id="about-me">Luke Markham</h1>
-        <nav class="page-nav">
-          <ul class="nav-list">
-            <li><a href="#top">HOME</a></li>
-            <li><a href="#Portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
+        <div class="final-flex-header">
+          <h1 id="about-me">Luke Markham</h1>
+          <nav class="page-nav clearfix">
+            <ul class="nav-list">
+              <li><a href="#top">HOME</a></li>
+              <li><a href="#Portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="intro-card clearfix">
           <img
             class="profile-pic"
@@ -47,76 +49,89 @@
     <div class="wrapper">
       <section class="main-content">
         <h2 id="portfolio">PORTFOLIO</h2>
+        <div class="final-1024">
+          <div class="row-1">
+            <div class="marketing-1">
+              <img
+                class="marketing image"
+                src="images/portfolio-1.png"
+                alt="marketing project picture"
+              />
+              <h3>Marketing Page</h3>
+              <p>
+                This project shows the front page of a marketing website meant
+                for a specific business I'm interested in.
+              </p>
+            </div>
 
-        <div class="flex-container">
-          <div class="col-1">
-            <img
-              class="marketing"
-              src="images/portfolio-1.png"
-              alt="marketing project picture"
-            />
-            <h3>Marketing Page</h3>
-            <p>
-              This project shows the front page of a marketing website meant for
-              a specific business I'm interested in.
-            </p>
-
-            <img
-              class="search image"
-              src="images/portfolio-2.png"
-              alt="search project picture"
-            />
-            <h3>Search Page</h3>
-            <p>
-              This project searches through a specific database to find
-              infomation that the user is trying to look up.
-            </p>
-
-            <img
-              class="travel image"
-              src="images/portfolio-3.png"
-              alt="travel project picture"
-            />
-
-            <h3>Travel App</h3>
-            <p>
-              This project compares travel times based on different
-              transportation methods and tells you the best one.
-            </p>
+            <div class="search-1">
+              <img
+                class="search image"
+                src="images/portfolio-2.png"
+                alt="search project picture"
+              />
+              <h3>Search Page</h3>
+              <p>
+                This project searches through a specific database to find
+                infomation that the user is trying to look up.
+              </p>
+            </div>
           </div>
-          <div class="col-2">
-            <img
-              class="map image"
-              src="images/portfolio-4.png"
-              alt="map plotting project picture"
-            />
-            <h3>Map of Favorite Spots</h3>
-            <p>
-              This project uses mapping apis to plot points for my favorite
-              spots in the city for a do-it-yourself walking tour.
-            </p>
 
-            <img
-              class="gallery image"
-              src="images/portfolio-5.png"
-              alt="image gallery project picture"
-            />
-            <h3>Photo Gallery</h3>
-            <p>
-              This project shows photos from a recent trip to the viewer and
-              allows them to easily navigate through photos.
-            </p>
+          <div class="row-2">
+            <div class="travel-1">
+              <img
+                class="travel image"
+                src="images/portfolio-3.png"
+                alt="travel project picture"
+              />
+              <h3>Travel App</h3>
+              <p>
+                This project compares travel times based on different
+                transportation methods and tells you the best one.
+              </p>
+            </div>
 
-            <img
-              class="calculator image"
-              src="images/portfolio-6.png"
-              alt="calculator project picture"
-            />
-            <h3>calculator</h3>
-            <p>
-              Someone can enter in the numbers they want, press a big blue
-              button and get the result.
-            </p>
+            <div class="map-1">
+              <img
+                class="map image"
+                src="images/portfolio-4.png"
+                alt="map plotting project picture"
+              />
+              <h3>Map of Favorite Spots</h3>
+              <p>
+                This project uses mapping apis to plot points for my favorite
+                spots in the city for a do-it-yourself walking tour.
+              </p>
+            </div>
+          </div>
+
+          <div class="row-3">
+            <div class="gallery-1">
+              <img
+                class="gallery image"
+                src="images/portfolio-5.png"
+                alt="image gallery project picture"
+              />
+              <h3>Photo Gallery</h3>
+              <p>
+                This project shows photos from a recent trip to the viewer and
+                allows them to easily navigate through photos.
+              </p>
+            </div>
+
+            <div class="calculator-1">
+              <img
+                class="calculator image"
+                src="images/portfolio-6.png"
+                alt="calculator project picture"
+              />
+              <h3>calculator</h3>
+              <p>
+                Someone can enter in the numbers they want, press a big blue
+                button and get the result.
+              </p>
+            </div>
           </div>
         </div>
       </section>

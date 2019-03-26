@@ -124,10 +124,6 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-.marketing {
-  margin-bottom: 0.5em;
-}
-
 /* Footer Styles ------------  */
 
 .footer-content {
@@ -177,8 +173,9 @@ hr {
   /* Header Styles ------------  */
 
   h1 {
-    padding-top: 1.5em;
+    padding-top: 2em;
   }
+
   .page-nav li {
     background-color: #f8f8f8;
     display: inline-block;
@@ -209,24 +206,41 @@ hr {
   .intro-card p {
     text-align: left;
     line-height: 1.4em;
+    font-size: 1.125em;
   }
 
   /* Main Content Styles ------------  */
 
-  .flex-container {
+  .row-1 {
     display: flex;
-    justify-content: space-between;
   }
 
-  .col-1 {
-    width: 49%;
+  .marketing-1 {
+    margin-right: 0.4em;
   }
-  .col-2 {
-    width: 49%;
+  .search-1 {
+    margin-left: 0.4em;
   }
 
-  .map {
-    margin-top: 0;
+  .row-2 {
+    display: flex;
+  }
+
+  .travel-1 {
+    margin-right: 0.4em;
+  }
+  .map-1 {
+    margin-left: 0.4em;
+  }
+
+  .row-3 {
+    display: flex;
+  }
+  .gallery-1 {
+    margin-right: 0.4em;
+  }
+  .calculator-1 {
+    margin-left: 0.4em;
   }
 
   .main-content p {
@@ -236,7 +250,7 @@ hr {
 
   /* Footer Content Styles ------------  */
   .footer-content {
-    padding-bottom: 3.5em;
+    padding-bottom: 3em;
   }
 
   .contact-blurb {
@@ -265,4 +279,28 @@ hr {
 /* 1024px -------------- */
 
 @media only screen and (min-width: 1024px) {
+  .final-flex-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .page-nav {
+    margin: 0;
+    padding-top: 2.25em;
+  }
+
+  .page-nav ul {
+    margin: 0;
+    display: inline;
+  }
+
+  .intro-card p {
+    font-size: 1.4em;
+  }
+
+  .final-1024 {
+    display: flex;
+  }
 }
