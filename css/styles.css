@@ -51,6 +51,7 @@ h3 {
 
 img {
   width: 100%;
+  border-radius: 0.5em;
 }
 
 /* Header Styles ------------  */
@@ -122,6 +123,40 @@ h2 {
 .image {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+}
+
+/* aside */
+
+#skills {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.skills-title {
+  margin-bottom: 2em;
+}
+
+.skills-blurb {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 1em;
+}
+
+.skills-blurb a {
+  text-decoration: underline;
+}
+
+.skill-list-1 {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skill-list-1 li {
+  padding-bottom: 0;
 }
 
 /* Footer Styles ------------  */
@@ -210,37 +245,43 @@ hr {
   }
 
   /* Main Content Styles ------------  */
-
-  .row-1 {
+  .flex-container {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .marketing-1 {
     margin-right: 0.4em;
+    flex: 1;
+    flex-basis: 48%;
   }
   .search-1 {
     margin-left: 0.4em;
-  }
 
-  .row-2 {
-    display: flex;
+    flex: 1;
+    flex-basis: 48%;
   }
 
   .travel-1 {
     margin-right: 0.4em;
+    flex: 1;
+    flex-basis: 48%;
   }
   .map-1 {
     margin-left: 0.4em;
+    flex: 1;
+    flex-basis: 48%;
   }
 
-  .row-3 {
-    display: flex;
-  }
   .gallery-1 {
     margin-right: 0.4em;
+    flex: 1;
+    flex-basis: 48%;
   }
   .calculator-1 {
     margin-left: 0.4em;
+    flex: 1;
+    flex-basis: 48%;
   }
 
   .main-content p {
@@ -251,6 +292,7 @@ hr {
   /* Footer Content Styles ------------  */
   .footer-content {
     padding-bottom: 3em;
+    position: relative;
   }
 
   .contact-blurb {
@@ -271,6 +313,8 @@ hr {
     padding: 0;
     margin: 0;
     display: inline;
+    position: relative;
+    bottom: 0.4em;
   }
   .bottom-links-2 li {
     padding: 0;
@@ -299,8 +343,49 @@ hr {
   .intro-card p {
     font-size: 1.4em;
   }
-
-  .final-1024 {
+  .flex-container {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  .marketing-1 {
+    margin-right: 0.4em;
+    flex: 1;
+    flex-basis: 30%;
+  }
+  .search-1 {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    flex: 1;
+    flex-basis: 30%;
+  }
+
+  .travel-1 {
+    margin-left: 0.4em;
+    margin-right: 0;
+    flex: 1;
+    flex-basis: 30%;
+  }
+  .map-1 {
+    margin-right: 0.4em;
+    margin-left: 0;
+    flex: 1;
+    flex-basis: 30%;
+  }
+
+  .gallery-1 {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    flex: 1;
+    flex-basis: 30%;
+  }
+  .calculator-1 {
+    margin-left: 0.4em;
+    flex: 1;
+    flex-basis: 30%;
+  }
+  .bottom-links-2 ul {
+    position: relative;
+    bottom: 2.5em;
   }
 }
