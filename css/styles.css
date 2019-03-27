@@ -74,7 +74,7 @@ h1 {
 
 .page-nav ul {
   list-style-type: none;
-  padding-inline-start: 0px;
+  padding-left: 0;
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -149,7 +149,7 @@ h2 {
 
 .skill-list-1 {
   list-style-type: none;
-  padding-inline-start: 0px;
+  padding-left: 0;
   text-align: center;
   width: 90%;
   margin: 0 auto;
