@@ -57,6 +57,12 @@ img {
 /* Header Styles ------------  */
 
 .header-content {
+  background-image: url(../images/header-background-4k.jpg);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  background-size: cover;
+  background-position: right;
   background-color: #f8f8f8;
 }
 
@@ -65,11 +71,19 @@ h1 {
   padding: 1em 0 0.5em 0;
   text-align: center;
   font-size: 1.5em;
+  color: black;
 }
 /* Margin used to fix collapsing gap between the h1 / header and the body of the page */
 
 .page-nav {
   margin-bottom: 1.5em;
+}
+
+.page-nav.clearfix li {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 8px 6px -6px;
+  -moz-box-shadow: 0 8px 6px -6px;
+  box-shadow: 0 8px 6px -6px;
 }
 
 .page-nav ul {
@@ -85,6 +99,7 @@ ul li {
   padding: 0.75em 0 0.75em;
   margin-top: 5px;
   font-weight: bold;
+  text-align: center;
 }
 ul li a {
   padding: 1em 7em 1em 7em;
@@ -93,6 +108,13 @@ ul li a {
 .profile-pic {
   width: 65%;
   margin-top: 1em;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+img[url$="4k.jpg"] {
+  border-radius: 10px;
 }
 
 .intro-card {
@@ -103,39 +125,31 @@ ul li a {
   width: 90%;
   margin: 0 auto;
   padding: 1.25em 0 2em 0;
-  color: rgb(155, 155, 155);
+  color: white;
 }
-
 /* Main Content Styles ------------  */
-
 .main-content {
   background-color: white;
   text-align: center;
   padding-bottom: 3.5em;
 }
-
 h2 {
   font-size: 1em;
   font-weight: bold;
   margin: 3em 0 3em 0;
 }
-
 .image {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
-
 /* aside */
-
 #skills {
   text-align: center;
   margin-bottom: 3em;
 }
-
 .skills-title {
   margin-bottom: 2em;
 }
-
 .skills-blurb {
   text-align: center;
   margin: 0 auto;
@@ -158,9 +172,7 @@ h2 {
 .skill-list-1 li {
   padding-bottom: 0;
 }
-
 /* Footer Styles ------------  */
-
 .footer-content {
   background-color: #f8f8f8;
   margin: 0 auto;
@@ -171,7 +183,6 @@ h2 {
 #contact {
   margin-bottom: 2em;
 }
-
 .footer-content p {
   padding-bottom: 0.75em;
   line-height: 1.5em;
@@ -181,15 +192,12 @@ h2 {
   font-family: "Karla", sans-serif;
   color: rgb(155, 155, 155);
 }
-
 hr {
   margin-top: 3em;
 }
-
 .email-to :hover {
   color: orange;
 }
-
 .bottom-links {
   display: flex;
   justify-content: space-between;
@@ -199,57 +207,44 @@ hr {
 .bottom-links-2 {
   display: none;
 }
-
 /* MEDIA QUERIES ------------  */
-
 /* 768px -------------- */
-
 @media only screen and (min-width: 768px) {
   /* Header Styles ------------  */
-
   h1 {
     padding-top: 2em;
+    color: white;
   }
-
   .page-nav li {
     background-color: #f8f8f8;
     display: inline-block;
   }
-
   #about-me {
     margin-bottom: 0;
   }
-
   .page-nav a {
     padding: 0 1em 0 1em;
   }
-
   .profile-pic {
     float: right;
     width: 40%;
-    padding: 0.5em 2.5em 4.25em 1em;
-  }
-
-  /* CLEARFIX CODE --- */
+    margin: 1.5em 2.5em 4.25em 1em;
+  } /* CLEARFIX CODE --- */
 
   .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
-
   .intro-card p {
     text-align: left;
     line-height: 1.4em;
     font-size: 1.125em;
-  }
-
-  /* Main Content Styles ------------  */
+  } /* Main Content Styles ------------  */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
   }
-
   .marketing-1 {
     margin-right: 0.4em;
     flex: 1;
@@ -257,44 +252,40 @@ hr {
   }
   .search-1 {
     margin-left: 0.4em;
-
     flex: 1;
     flex-basis: 48%;
   }
-
   .travel-1 {
     margin-right: 0.4em;
     flex: 1;
     flex-basis: 48%;
   }
+
   .map-1 {
     margin-left: 0.4em;
     flex: 1;
     flex-basis: 48%;
   }
-
   .gallery-1 {
     margin-right: 0.4em;
     flex: 1;
     flex-basis: 48%;
   }
+
   .calculator-1 {
     margin-left: 0.4em;
     flex: 1;
     flex-basis: 48%;
   }
-
   .main-content p {
     margin: 0px auto;
     width: 80%;
   }
-
   /* Footer Content Styles ------------  */
   .footer-content {
     padding-bottom: 3em;
     position: relative;
   }
-
   .contact-blurb {
     width: 75%;
     margin: 0 auto;
@@ -302,13 +293,11 @@ hr {
   .bottom-links {
     display: none;
   }
-
   .bottom-links-2 {
     display: flex;
     justify-content: space-between;
     padding-top: 1em;
   }
-
   .bottom-links-2 ul {
     padding: 0;
     margin: 0;
@@ -321,33 +310,33 @@ hr {
   }
 }
 /* 1024px -------------- */
-
 @media only screen and (min-width: 1024px) {
+  h1 {
+    color: white;
+  }
+
   .final-flex-header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 90%;
   }
-
   .page-nav {
     margin: 0;
     padding-top: 2.25em;
   }
-
   .page-nav ul {
     margin: 0;
     display: inline;
   }
-
   .intro-card p {
     font-size: 1.4em;
+    padding-top: 1em;
   }
   .flex-container {
     display: flex;
     flex-wrap: wrap;
   }
-
   .marketing-1 {
     margin-right: 0.4em;
     flex: 1;
@@ -359,7 +348,6 @@ hr {
     flex: 1;
     flex-basis: 30%;
   }
-
   .travel-1 {
     margin-left: 0.4em;
     margin-right: 0;
@@ -372,7 +360,6 @@ hr {
     flex: 1;
     flex-basis: 30%;
   }
-
   .gallery-1 {
     margin-left: 0.4em;
     margin-right: 0.4em;
@@ -387,5 +374,32 @@ hr {
   .bottom-links-2 ul {
     position: relative;
     bottom: 2.5em;
+  }
+}
+
+/* 1400px -------------- */
+@media only screen and (min-width: 1400px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  li {
+    font-size: 1.1em;
+  }
+
+  .intro-card p {
+    font-size: 2em;
+    padding-top: 0.6em;
   }
 }
